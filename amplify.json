@@ -1,6 +1,13 @@
 {
   "version": "0.1",
   "frontend": {
+    "redirects": [
+      {
+        "source": "/",
+        "target": "/src/app/pages/index",
+        "status": 200
+      }
+    ],
     "modules": [
       {
         "type": "javascript",
