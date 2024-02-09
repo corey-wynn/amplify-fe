@@ -9,10 +9,6 @@
           "build": {
             "command": "npm run build",
             "output": "out"
-          },
-          "ssr": {
-            "command": "npm run build && npm run export",
-            "output": "out"
           }
         }
       }
