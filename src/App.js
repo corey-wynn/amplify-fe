@@ -2,9 +2,12 @@ import "./App.css";
 
 function App() {
   const hitBackend = () => {
-    const url = "https://rjb792f1wi.execute-api.us-east-2.amazonaws.com/default/Python_API_test";
-    fetch(url)
-      .then((response) => response.json())
+    fetch(`${process.env.REACT_APP_API_URL}/route1`)
+      .then((response) => {
+        const val = response.json();
+        console.log("BAMF - val", val);
+        return val;
+      })
       .then((data) => console.log(data));
   };
 
