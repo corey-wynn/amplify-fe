@@ -1,8 +1,5 @@
 name: Test Github Actions
 
-variables:
-  NODE_ENV: development
-
 on:
   push:
     branches: ["main"]
