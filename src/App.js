@@ -2,6 +2,7 @@ import "./App.css";
 
 function App() {
   const hitBackend = () => {
+    console.log("BAMF ---1---");
     console.log("BAMF - process.env", process.env);
     fetch(`${process.env.REACT_APP_API_URL}/route1`)
       .then((response) => {
