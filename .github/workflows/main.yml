@@ -22,11 +22,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Override NODE_ENV
+        run: npm config set NODE_ENV development
+
       - name: Build app
         run: npm run build-dev
-
-      - name: Set environment variable
-        run: echo "REACT_APP_ENV=development" >> .env
 
       - name: Upload to S3
         uses: jakejarvis/s3-sync-action@master
